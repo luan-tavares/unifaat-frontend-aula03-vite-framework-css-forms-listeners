@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Seleciona o elemento <section> do HTML
-    const sectionElement = document.querySelector("section");
+    const sectionElement = document.querySelector("#content-section");
 
     // Dentro da section, seleciona o elemento com id="btn"
     const buttonElement = sectionElement.querySelector("#btn");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Se o evento for de teclado, adiciona informações extras (tecla e código da tecla)
         if (event instanceof KeyboardEvent) {
-            lines.push(`key: ${e.key}`, `code: ${e.code}`);
+            lines.push(`key: ${event.key}`, `code: ${event.code}`);
         }
 
         // Concatena as informações formatadas no log, separadas por "---------------"
