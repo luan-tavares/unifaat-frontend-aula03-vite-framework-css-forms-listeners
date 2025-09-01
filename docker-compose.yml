@@ -15,7 +15,7 @@ services:
     networks:
       - app-network
 
-  nginx_container:
+  nginx-container:
     build:
       context: .
       dockerfile: docker/nginx/Dockerfile
